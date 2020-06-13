@@ -1,5 +1,5 @@
-<p align="center">
-    <img height="260" width="260" src="sites2.png">
+<p>
+    <img align="center" height="260" width="260" src="sites2.png">
     <marquee behavior="alternate" direction="right"><h1>Site Store</h1></marquee>
 </p>
 
