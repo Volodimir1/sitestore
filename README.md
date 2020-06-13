@@ -1,7 +1,7 @@
 <p align="center">
     <img height="260" width="260" src="sites2.png">
     <marquee behavior="alternate" direction="right">
-      <h1 style="color: #FDB100">Site Store</h1>
+    <span style="color: #FDB100"><h1>Site Store</h1></span>
     </marquee>
 </p>
 
