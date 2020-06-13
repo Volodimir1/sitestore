@@ -1,3 +1,5 @@
+<img height="260" width="260" src="sites2.png">
+
 # sitestore
 
 ## Project setup
