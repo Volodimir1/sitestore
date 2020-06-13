@@ -1,6 +1,8 @@
 <p align="center">
     <img height="260" width="260" src="sites2.png">
-  <h1 align="center">Site Store</h1>
+    <marquee behavior="alternate" direction="right">
+      <h1 style="color: #FDB100">Site Store</h1>
+    </marquee>
 </p>
 
 ## Project setup
