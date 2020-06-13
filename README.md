@@ -1,6 +1,6 @@
 <p>
-    <img align="center" height="260" width="260" src="sites2.png">
-    <marquee behavior="alternate" direction="right"><h1>Site Store</h1></marquee>
+    <marquee behavior="alternate" direction="right"><img align="center" height="260" width="260" src="sites2.png"></marquee>
+    <h1>Site Store</h1>
 </p>
 
 ## Project setup
