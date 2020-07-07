@@ -17,16 +17,9 @@ export default {
 .header {
     // margin: 0;
     &__title {
-       font-family: 'Modak', cursive;
-    //    @include text($H700, 400, $M1);
-            //   color: $M1;
-
-    //    font-size: 3em;
-    //    font-weight: normal;
-        // -webkit-font-smoothing: antialiased;
-        // -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        // color: #FDB100;
+       font-family: $title-font, cursive;
+       @include text($H800, 400, $M1);
+      text-align: center;
         margin-top: 30px; 
     }
 }
