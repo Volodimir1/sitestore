@@ -1,5 +1,6 @@
 <template>
 <div class="header">
+
   <!-- header up -->
   <div class="header__head">
     <div class="header-item header__title">
@@ -33,6 +34,10 @@
       </label>
     </div>
   </div>
+  <video autoplay loop>
+    <source src="../videos/GLOBE_TERRESTRE_RC_EQUAL_surface.mp4" type="video/mp4"/>
+  </video>
+
 </div>
 </template>
 
@@ -47,14 +52,18 @@ export default {
 
 // <style scoped lang="scss">
 .header {
-  background-image: url(../images/SSdimetria_2_1_background.png);
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  height: 100vh;
-  max-height: max-content;
+  // background-image: url(../images/SSdimetria_2_1_background.png);
+  // background-size: cover;
+  // background-position: center center;
+  // position: relative;
+  // height: 100vh;
+  // max-height: max-content;
   &__head {
       background-color: $N600;
+
+      position: relative;
+      color: white;
+      z-index: 1;
 
       @include flex(space-around, center);
   }
@@ -86,5 +95,17 @@ export default {
   &:not(:last-child) {
       margin-right: 40px;
     }
+}
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-position: center;
+  object-fit: cover;
+ 
 }
 </style>
