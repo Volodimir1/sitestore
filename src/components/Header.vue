@@ -35,7 +35,7 @@
     </div>
   </div>
   <video autoplay loop>
-    <source src="../videos/GLOBE_TERRESTRE_RC_EQUAL_surface.mp4" type="video/mp4"/>
+    <source src="../videos/Earth-SS_7_2.mp4" type="video/mp4"/>
   </video>
 
 </div>
@@ -79,6 +79,7 @@ export default {
     // @include svg(35px, $N800)
     height: 35px;
     width: 35px;
+    border-radius: 17px;
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 0 10px $T200;
