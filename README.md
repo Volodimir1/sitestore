@@ -1,4 +1,3 @@
-<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
 <p align="center">
     <img height="260" width="260" src="sites2.png">
   <h1 align="center">Site Store</h1>

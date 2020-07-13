@@ -1,6 +1,5 @@
 <template>
 <div class="header">
-
   <!-- header up -->
   <div class="header__head">
     <div class="header-item header__title">
@@ -37,7 +36,17 @@
   <video autoplay loop>
     <source src="../videos/Earth-SS_7_2.mp4" type="video/mp4"/>
   </video>
-
+  <!-- About -->
+  <div class="header__center">
+    <div class="header__center-item about">
+      <h3 class="about__title">About us</h3>
+      <p class="about__text">Do you think we will make you a website? Sorry, no.</p>
+      <p class="about__text">We will fulfill your dream! This is just magic.</p>
+    </div>
+    <div class="header__center-item">
+      <p></p>
+    </div>
+  </div>
 </div>
 </template>
 
@@ -52,7 +61,7 @@ export default {
 
 // <style scoped lang="scss">
 .header {
-  // background-image: url(../images/SSdimetria_2_1_background.png);
+  // background-image: url(../images/SSdimetria_2.JPG);
   // background-size: cover;
   // background-position: center center;
   // position: relative;
@@ -60,12 +69,14 @@ export default {
   // max-height: max-content;
   &__head {
       background-color: $N600;
-
+      opacity: 0.9;
       position: relative;
       color: white;
       z-index: 1;
-
       @include flex(space-around, center);
+      &:hover {
+        opacity: 0.97;
+      }
   }
   &__title {
     @include flex(space-around, center);
@@ -89,7 +100,25 @@ export default {
     font-family: $title-font, cursive;
     @include text($H800, 400, $M1);
     text-align: center;
-    // margin-top: 30px; 
+  }
+  &__center {
+    // width: 100%;
+    // height: 100%;
+    // height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+
+    @include flex(space-between, center);
+    padding: 50px;
+  }
+  &__center-item {
+    // margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: $N600;
+    border-radius: 20px;
+    opacity: 0.8;
   }
 }
 .header-item {
@@ -107,6 +136,13 @@ video {
   left: 0;
   object-position: center;
   object-fit: cover;
- 
+}
+.about {
+  position: relative;
+  color: $M1;
+  z-index: 1;
+  &__title {
+    text-align: center;
+  }
 }
 </style>
