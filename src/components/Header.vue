@@ -34,7 +34,7 @@
     </div>
   </div>
   <video autoplay loop>
-    <source src="../videos/Earth-SS_7_2.mp4" type="video/mp4"/>
+    <source src="../videos/Earth-SS_12.mp4" type="video/mp4"/>
   </video>
   <!-- About -->
   <div class="header__center">
@@ -91,6 +91,7 @@ export default {
     height: 35px;
     width: 35px;
     border-radius: 17px;
+    box-shadow: 0 0 5px $N00;
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 0 10px $T200;
@@ -100,11 +101,9 @@ export default {
     font-family: $title-font, cursive;
     @include text($H800, 400, $M1);
     text-align: center;
+    text-shadow: 1px 1px 5px $N00;
   }
   &__center {
-    // width: 100%;
-    // height: 100%;
-    // height: 100vh;
     position: absolute;
     width: 100%;
     top: 25%;
@@ -113,12 +112,12 @@ export default {
     padding: 50px;
   }
   &__center-item {
-    // margin: auto;
     height: 400px;
     width: 400px;
     background-color: $N600;
     border-radius: 20px;
     opacity: 0.8;
+    padding: 20px;
   }
 }
 .header-item {
@@ -139,10 +138,22 @@ video {
 }
 .about {
   position: relative;
-  color: $M1;
   z-index: 1;
+  font-family: $matrix-font;
+  @include text($H60, 400, $G02);
+  text-shadow: 2px 2px 5px $N00;
+  letter-spacing: 0.01em;
   &__title {
     text-align: center;
+    text-transform: capitalize;
+    line-height: 3em;
+  }
+  &__text {
+  text-indent: 1.5em;
+  line-height: 1.4em;
+  &:not(:last-child) {
+      margin-bottom: 1em;
+    }
   }
 }
 </style>
